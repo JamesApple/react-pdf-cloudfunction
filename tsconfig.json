@@ -6,7 +6,9 @@
     "sourceMap": true,
     "outDir": "./dist",
     "pretty": true,
+    "jsx": "react",
 
+    "esModuleInterop": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "strict": true,
@@ -17,5 +19,11 @@
     "strictPropertyInitialization": true,
     "noImplicitThis": true,
     "alwaysStrict": true
-  }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
