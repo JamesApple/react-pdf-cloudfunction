@@ -1,0 +1,26 @@
+{
+  "name": "react-pdf-cloudfunction",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "James Apple",
+  "license": "MIT",
+  "scripts": {
+    "start": "functions-framework --target=reactPDF",
+    "dev": "tsc-watch --onSuccess \"yarn start\"",
+    "localtest": "curl http://localhost:8080 | sed 's/\"//g' | base64 --decode > decoded.pdf && open decoded.pdf"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^1.1.1",
+    "html-pdf": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/html-pdf": "^2.1.2",
+    "@types/jest": "^24.0.15",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "tsc-watch": "^2.2.1",
+    "typescript": "^3.5.2"
+  }
+}
