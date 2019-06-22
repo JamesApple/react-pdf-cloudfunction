@@ -7,7 +7,8 @@
   "scripts": {
     "start": "functions-framework --target=reactPDF",
     "dev": "tsc-watch --onSuccess \"yarn start\"",
-    "localtest": "curl http://localhost:8080 | sed 's/\"//g' | base64 --decode > decoded.pdf && open decoded.pdf"
+    "localtest": "curl http://localhost:8080 | sed 's/\"//g' | base64 --decode > decoded.pdf && open decoded.pdf",
+    "deploy": "gcloud functions deploy reactPDF --runtime nodejs10 --trigger-http"
   },
   "dependencies": {
     "@google-cloud/functions-framework": "^1.1.1",
