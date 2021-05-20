@@ -13,7 +13,7 @@
   "dependencies": {
     "@google-cloud/functions-framework": "^1.1.1",
     "@types/react-dom": "^16.8.4",
-    "html-pdf": "^2.2.0",
+    "html-pdf": "^3.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-html-document": "^3.1.0",
